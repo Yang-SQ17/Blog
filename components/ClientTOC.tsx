@@ -1,0 +1,57 @@
+"use client";
+import { useState, useEffect, useCallback } from 'react';
+
+interface TocItem { level: number; text: string; id: string; }
+
+export default function ClientTOC({ toc }: { toc: TocItem[] }) {
+  const [activeId, setActiveId] = useState('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) setActiveId(entry.target.id);
+        });
+      },
+      { rootMargin: '-80px 0px -80% 0px' }
+    );
+
+    toc.forEach(item => {
+      const el = document.getElementById(item.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [toc]);
+
+  const handleClick = useCallback((e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, []);
+
+  return (
+    <div className="flex max-h-[40dvh] flex-col overflow-hidden bg-white/60 dark:bg-slate-800/50 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-white/10 shadow-xl">
+      <h3 className="mb-4 shrink-0 border-l-4 border-indigo-500 pl-2 text-sm font-black text-slate-900 dark:text-white">TABLE OF CONTENTS</h3>
+      <nav className="min-h-0 space-y-2 overflow-y-auto overscroll-contain pr-2">
+        {toc.map((item, i) => (
+          <a
+            key={i}
+            href={`#${encodeURIComponent(item.id)}`}
+            onClick={(e) => handleClick(e, item.id)}
+            className={`block text-xs font-bold transition-all duration-300 truncate ${
+              activeId === item.id
+                ? 'text-indigo-600 dark:text-indigo-400 translate-x-1'
+                : 'text-slate-500 dark:text-slate-400 hover:text-indigo-500 hover:translate-x-0.5'
+            }`}
+            style={{ paddingLeft: `${(item.level - 1) * 12}px` }}
+          >
+            {item.text}
+          </a>
+        ))}
+      </nav>
+    </div>
+  );
+}
