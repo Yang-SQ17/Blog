@@ -19,7 +19,7 @@ import { katexOptions } from '../../lib/markdown';
 
 export default async function AboutPage() {
   const fullPath = path.join(process.cwd(), 'app', 'about', 'about.md');
-  let contentHtml = "博主很懒，还没有写自我介绍...";
+  let contentHtml = "博主很懒，还没有写自我介绍哦...";
   let coverImage = "https://cloudflare-imgbed-9pz.pages.dev/file/1782542461827_上杉绘梨衣.png";
 
   try {
