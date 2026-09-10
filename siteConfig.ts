@@ -68,13 +68,13 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   title: "Yang's Blog",
-  faviconUrl: "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-cat.png",
+  faviconUrl: "https://a68b43cc.cloudflare-imgbed-9pz.pages.dev/file/1782456852356_icon.png",
   authorName: "Yang",
   bio: "Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.",
   navTitle: "Yang",
   navSuffix: "'s ",
   navAfter: "Blog",
-  avatarUrl: new URL("https://a68b43cc.cloudflare-imgbed-9pz.pages.dev/file/1782456681130_圣诞猫猫.jpg").href,
+  avatarUrl: new URL("https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-cat.png").href,
   useGradient: true,
   themeColors: ["#fffaf4", "#f7efe7", "#ead8ca", "#f4e7dc"],
   bgImages: [
