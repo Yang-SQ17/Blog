@@ -94,7 +94,7 @@ export const siteConfig: SiteConfig = {
     github: "https://github.com/Yang-SQ17",
     gitee: "",
     google: "",
-    email: "panchenkai121@163.com",
+    email: "9564200@qq.com",
     qq: "9564200",
     twitter: "",
     xiaohongshu: "",

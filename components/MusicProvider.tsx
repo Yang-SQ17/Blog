@@ -11,7 +11,6 @@ import React, {
   useSyncExternalStore,
   type ReactNode,
 } from "react";
-import { siteConfig } from "../siteConfig";
 import { musicPlaybackStore } from "../lib/music-playback-store";
 import { isTimeInRanges } from "../lib/music-seeking";
 import {
@@ -110,7 +109,6 @@ export function MusicProvider({ children }: { children: ReactNode }) {
   const currentSong = songs[currentIndex];
 
   useEffect(() => {
-    // 优先使用数据库歌曲，否则 fallback 到 siteConfig.cloudMusicList
     const controller = new AbortController();
 
     fetch('/api/songs', { signal: controller.signal })
@@ -119,31 +117,9 @@ export function MusicProvider({ children }: { children: ReactNode }) {
         if (controller.signal.aborted) return;
         if (Array.isArray(data) && data.length > 0) {
           setSongs(data);
-        } else {
-          // 数据库无歌曲时，使用 siteConfig.cloudMusicList（网易云 ID 方式）
-          setSongs(siteConfig.cloudMusicList.map((item, index) => ({
-            id: Number(item.id) || index,
-            title: item.name,
-            artist: item.artist,
-            album: "",
-            pic: "",
-            url: `//music.163.com/song/media/outer/url?id=${item.id}.mp3`,
-            lrc: "",
-          })));
         }
       })
-      .catch(() => {
-        // API 失败时也 fallback
-        setSongs(siteConfig.cloudMusicList.map((item, index) => ({
-          id: Number(item.id) || index,
-          title: item.name,
-          artist: item.artist,
-          album: "",
-          pic: "",
-          url: `//music.163.com/song/media/outer/url?id=${item.id}.mp3`,
-          lrc: "",
-        })));
-      })
+      .catch(() => {})
       .finally(() => {
         if (!controller.signal.aborted) setIsLoading(false);
       });
