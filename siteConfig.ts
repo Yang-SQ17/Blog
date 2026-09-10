@@ -88,6 +88,7 @@ export const siteConfig: SiteConfig = {
     { id: "167786", name: "南山忆", artist: "许嵩" },
     { id: "167761", name: "天使", artist: "许嵩" },
     { id: "28987656", name: "梧桐灯", artist: "许嵩" },
+    { id: "2003171285", name: "海屿你", artist: "马也_Crabbit" },
   ],
   social: {
     github: "https://github.com/Yang-SQ17",
