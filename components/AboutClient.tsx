@@ -26,6 +26,8 @@ export default function AboutClient({ contentHtml, coverImage, activities }: { c
           muted
           loop
           playsInline
+          webkit-playsinline="true"
+          x5-video-player-type="h5"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
