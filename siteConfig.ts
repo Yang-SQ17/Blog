@@ -74,7 +74,7 @@ export const siteConfig: SiteConfig = {
   navTitle: "Yang",
   navSuffix: "'s ",
   navAfter: "Blog",
-  avatarUrl: new URL("https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-cat.png").href,
+  avatarUrl: new URL("https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/head.png").href,
   useGradient: true,
   themeColors: ["#fffaf4", "#f7efe7", "#ead8ca", "#f4e7dc"],
   bgImages: [
