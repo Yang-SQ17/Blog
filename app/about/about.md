@@ -1,6 +1,6 @@
 ---
 title: "关于我"
-cover: "https://cloudflare-imgbed-9pz.pages.dev/file/1782542461827_上杉绘梨衣.png"
+cover: "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/background.mp4"
 ---
 
 ## Hello World, I'm Frud_.
