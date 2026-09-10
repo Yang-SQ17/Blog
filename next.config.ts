@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev",
+      },
     ],
     qualities: [75, 80, 90],
     deviceSizes: [640, 750, 828, 1080, 1200, 1600, 1920, 2048],
