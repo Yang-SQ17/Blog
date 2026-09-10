@@ -134,7 +134,7 @@ export default function HeroBanner() {
       <div
         className="relative w-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://a68b43cc.cloudflare-imgbed-9pz.pages.dev/file/1782476376234_博客首页.png)',
+          backgroundImage: 'url(https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/background2.png)',
           height: '68vh',
           minHeight: '430px',
         }}
