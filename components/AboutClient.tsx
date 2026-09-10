@@ -20,7 +20,14 @@ export default function AboutClient({ contentHtml, coverImage, activities }: { c
     <div>
       {/* Cover */}
       <div className="w-full h-48 md:h-64 rounded-3xl overflow-hidden mb-8 relative group">
-        <img src={coverImage} alt="cover" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+        <video
+          src={coverImage}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
       </div>
 

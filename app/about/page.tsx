@@ -20,7 +20,7 @@ import { katexOptions } from '../../lib/markdown';
 export default async function AboutPage() {
   const fullPath = path.join(process.cwd(), 'app', 'about', 'about.md');
   let contentHtml = "博主很懒，还没有写自我介绍哦...";
-  let coverImage = "https://cloudflare-imgbed-9pz.pages.dev/file/1782542461827_上杉绘梨衣.png";
+  let coverImage = "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/%E5%81%A5%E5%BA%B7%E6%9A%B4%E5%AF%8C-%E6%8A%A4%E7%9C%BC.mp4";
 
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
