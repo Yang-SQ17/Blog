@@ -45,6 +45,7 @@ export default async function AboutPage() {
     contentHtml = processedContent.toString();
   } catch (e) {}
 
+
   // Get activities from database
   const allActivities: { id: string; type: string; title: string; date: string; url: string }[] = [];
 
