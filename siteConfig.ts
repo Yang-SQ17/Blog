@@ -67,11 +67,11 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  title: "Frud's Blog",
-  faviconUrl: "https://a68b43cc.cloudflare-imgbed-9pz.pages.dev/file/1782456852356_icon.png",
-  authorName: "Frud_",
+  title: "Yang's Blog",
+  faviconUrl: "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-cat.png",
+  authorName: "Yang",
   bio: "Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.",
-  navTitle: "Frud",
+  navTitle: "Yang",
   navSuffix: "'s ",
   navAfter: "Blog",
   avatarUrl: new URL("https://a68b43cc.cloudflare-imgbed-9pz.pages.dev/file/1782456681130_圣诞猫猫.jpg").href,
@@ -119,7 +119,7 @@ export const siteConfig: SiteConfig = {
   },
   petConfig: {
     name: "煤球",
-    avatar: "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-black.png",
+    avatar: "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=meiqiu&backgroundColor=c0aede",
     systemPrompt: "你现在是一只傲娇、聪明、有点毒舌但很可爱的暹罗猫。你的名字叫\"煤球\"。你说话的特点是：必须简短，每次最多一两句话。喜欢在句尾加上\"喵~\"。经常抱怨肚子饿。回复字数最多不能超过80字。绝对不要承认自己是一个AI模型。你要表现得像一个真实存在的小宠物，有情绪、有脾气。",
     proactiveMessages: [
       "主人~该休息一下了喵",
@@ -135,6 +135,6 @@ export const siteConfig: SiteConfig = {
     // Add your own OpenAI-compatible endpoints here if you self-host a proxy.
     allowedApiHosts: ["api.deepseek.com", "api.openai.com"],
   },
-  friendLinkApplyFormat: "名称：Frud's Blog\n简介：一个热爱技术的博客\n链接：https://your-domain.com\n头像：https://your-avatar-url.jpg",
+  friendLinkApplyFormat: "名称：Yang's Blog\n简介：一个热爱技术的博客\n链接：https://your-domain.com\n头像：https://your-avatar-url.jpg",
   enableLevelSystem: false,
 };
