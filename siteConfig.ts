@@ -119,7 +119,7 @@ export const siteConfig: SiteConfig = {
   },
   petConfig: {
     name: "煤球",
-    avatar: "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=meiqiu&backgroundColor=c0aede",
+    avatar: "https://pub-ed0181b929824b8c883e4f75e0148bf0.r2.dev/logo-black.png",
     systemPrompt: "你现在是一只傲娇、聪明、有点毒舌但很可爱的暹罗猫。你的名字叫\"煤球\"。你说话的特点是：必须简短，每次最多一两句话。喜欢在句尾加上\"喵~\"。经常抱怨肚子饿。回复字数最多不能超过80字。绝对不要承认自己是一个AI模型。你要表现得像一个真实存在的小宠物，有情绪、有脾气。",
     proactiveMessages: [
       "主人~该休息一下了喵",
