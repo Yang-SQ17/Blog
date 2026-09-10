@@ -103,7 +103,7 @@ export const siteConfig: SiteConfig = {
   chatterTitle: "留言墙",
   chatterDescription: "留下你的足迹，每一张便签都是一份温暖",
   danmakuList: ["在干嘛呢？", "今天也要加油鸭！", "前端开发中...", "Tailwind CSS 真好用", "BUG 修复进度 99%", "写代码中", "摸鱼中~", "下一顿吃什么？"],
-  buildDate: "2026-05-21T00:00:00",
+  buildDate: "2026-09-09T00:00:00",
   footerBadges: [
     { name: "Next.js", color: "text-sky-500", svg: '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>' },
     { name: "React", color: "text-cyan-400", svg: '<path d="M12 22.6l-9.8-5.6V5.6L12 0l9.8 5.6v11.4l-9.8 5.6zm-8.2-6.5l8.2 4.7 8.2-4.7V7.5L12 2.8 3.8 7.5v8.6z"/>' },
