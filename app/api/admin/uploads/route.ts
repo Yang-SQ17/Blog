@@ -3,6 +3,10 @@ import { requireAdmin } from '../../../../lib/admin/api-helpers';
 import { uploadImageToBed } from '../../../../lib/images/image-bed';
 
 export const runtime = 'nodejs';
+export const maxDuration = 30;
+export const bodyParser = {
+  sizeLimit: '10mb',
+};
 
 const MAX_UPLOAD_BYTES = 8 * 1024 * 1024;
 function vditorResponse(
